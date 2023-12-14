@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>十进制计数器虚拟仿真实验-西北大学虚拟仿真实验平台</title>
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+    <div class="header">
+        <div class="headcontent">
+            <a href="https://ist.nwu.edu.cn/"><img class="headleft" src="../images/headleft.jpg" alt="西北大学信息科学与技术学院" title="西北大学信息科学与技术学院"></a>
+            <a href="https://www.nwu.edu.cn/"><img class="headright" src="../images/headright.png" alt="西北大学" title="西北大学"></a>
+        </div>
+    </div>
+    <div class="banner">
+        <div class="bannerleft">
+            <div class="text">
+                <h1>西北大学虚拟仿真实验平台</h1>
+                <p class="introduction">西北大学虚拟仿真实验平台是基于平台化、模块化的电子信息核心课程智慧实验平台，满足多门相关课程实验。打造线上线下融合的智能数模电实验平台，实现本地和云端共享的实验设备机制。支撑电路分析、低频模拟电路实验、数字逻辑电路等相关实验，并实验内容可定制。</p>
+                <p class="introduction">平台支持 “内容+平台+模块+方向”分类型的学习方式，具备学习过程大数据采集，为以学生为中心的实践评价体系做支撑。此平台基于云、端、边一体化的硬件平台，该平台可24小时在线开放，具备完善的预约管理系统，支持现场、远程开展实验，将强化实验中心硬件建设，改善实验条件，优化实验教学队伍，完善运行与管理机制，促进西北大学信息科学与技术学院工程实践能力的培养。</p>
+            </div>
+        </div>
+        <div class="bannerright">
+            <div class="video">
+                <video src="../video/video.mp4" controls>123</video>
+            </div>
+            <div class="buttonscope">
+                <div class="button">
+                    <a href="http://minibox.elflect.com/"><div class="excercisebutton" title="点击开始实验">我要做实验</div></a>
+                </div class="button">
+            </div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="title">
+            <h1>十进制计数器实验</h1>
+        </div>
+        <div class="label">
+            <ul>
+                <li><a href="./introduce.html">实验简介</a></li>
+                <li><a href="./index.html">实验目标</a></li>
+                <li><a href="./theory.html">实验原理</a></li>
+                <li><a href="./method.html">实验方法</a></li>
+                <li class="selected">实验步骤</li>
+                <li><a href="./result.html">实验结果</a></li>
+            </ul>
+        </div>
+        <div class="text">
+            <p>1.实验用的模块资源。点击左上角“扫描”，左边“模块器件”栏出现下拉菜单，此菜单显示出当前实验平台上配备好的模块资源，例如：74HC00、CD4511功能测试电路，74HC161等等。</p>
+            <img src="../images/procedure01.png" alt="操作面板" title="操作面板">
+            <p class="picture">图1 操作面板</p>
+            <p>2.连接测量仪器。点击上方“找仪器”，左边“仪器设备”栏出现RIGOL字样信号源、示波器，表示仪器成功连接。</p>
+            <img src="../images/procedure02.png" alt="连接测量仪器" title="连接测量仪器">
+            <p class="picture">图2 连接测量仪器</p>
+            <p>3.摆放元器件。从“模块器件”栏选择实验需要的模块“74HC00”、“CD4511功能测试电路”、“74HC161”、“数码管模块”，单击模块名称，下拉菜单显示了模块上可以使用的器件。从“电源地”栏选择+5V电源和地，拖拽到原理图绘制区域。同样，把信号源也拖拽进来。要注意每个元器件的摆放位置，方便连接电路。</p>
+            <img src="../images/procedure03.png" alt="摆放元器件" title="摆放元器件">
+            <p class="picture">图3 摆放元器件</p>
+            <p>4.连接数码管模块。由于四位数码管是共用7段端口，每个数码管有一个共阴极极，需要用哪个显示就把对应的共阴极接地，模块内部已经加了限流电阻，因此外部不用再加限流电阻。数码管实物图如下所示：</p>
+            <img src="../images/procedure04.png" alt="数码管" title="数码管">
+            <p class="picture">图4 数码管</p>
+            <img src="../images/procedure05.png" alt="连接数码管模块" title="连接数码管模块">
+            <p class="picture">图5 连接数码管模块</p>
+            <p>5.连接CD4511模块。CD4511是一个用于驱动共阴极 LED （数码管）显示器的 BCD 码—七段码译码器，特点：具有BCD转换、消隐和锁存控制、七段译码及驱动功能的CMOS电路能提供较大的拉电流。可直接驱动LED显示器。</p>
+            <img src="../images/procedure06.png" alt="连接CD4511模块" title="连接CD4511模块">
+            <p class="picture">图6 连接CD4511模块</p>
+            <p>6.连接74HC161模块。接着将4位二进制计数器74HC161接入电路。</p>
+            <img src="../images/procedure07.png" alt="连接74HC161模块" title="连接74HC161模块">
+            <p class="picture">图7 连接74HC161模块</p>
+            <p>7.连接74HC00模块。然后将与非门74HC00接入电路中。</p>
+            <img src="../images/procedure08.png" alt="连接74HC00模块" title="连接74HC00模块">
+            <p class="picture">图8 连接74HC00模块</p>
+            <p>8.连接信号源模块。信号源模块作为数据输入，最后接入到电路中。</p>
+            <img src="../images/procedure09.png" alt="连接信号源模块" title="连接信号源模块">
+            <p class="picture">图9 连接信号源模块</p>
+            <p>9.连接好电路，点击“下发”。</p> 
+            <p>【注意】原理图画好后，右上角会出现红色字体提示“指令未下发”，点击左上角“下发”完成原理图到电路板的映射，创建好实物电路。</p>
+            <img src="../images/procedure10.png" alt="点击“下发”" title="点击“下发”">
+            <p class="picture">图10 点击“下发”</p>
+            <p>10.调试和观测。双击“信号源”图标，打开摄像头。通过缩放、移动原理图，调整布局。通过摄像头，观察到真实实验环境中用到的示波器。</p>
+            <img src="../images/procedure11.png" alt="调试和观测" title="调试和观测">
+            <p class="picture">图11 调试和观测</p>
+            <p>【注意】信号源输入选择方波，幅值设置为4Vpp，偏移设置为2V，如果输入波形不在74HC161输入逻辑电平范围内，那么有可能会出现逻辑混乱或者无法正确的驱动芯片内部电路。</p>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="content">
+            <p>地址：西安市长安区郭杜教育科技产业园区学府大道1号 邮编：710127</p>
+            <p>Copyright 2017 Northwest University. All Rights Reserved. 西北大学版权所有</p>
+        </div>
+    </div>  
+</body>
+</html>

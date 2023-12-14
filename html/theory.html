@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>十进制计数器虚拟仿真实验-西北大学虚拟仿真实验平台</title>
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+    <div class="header">
+        <div class="headcontent">
+            <a href="https://ist.nwu.edu.cn/"><img class="headleft" src="../images/headleft.jpg" alt="西北大学信息科学与技术学院" title="西北大学信息科学与技术学院"></a>
+            <a href="https://www.nwu.edu.cn/"><img class="headright" src="../images/headright.png" alt="西北大学" title="西北大学"></a>
+        </div>
+    </div>
+    <div class="banner">
+        <div class="bannerleft">
+            <div class="text">
+                <h1>西北大学虚拟仿真实验平台</h1>
+                <p class="introduction">西北大学虚拟仿真实验平台是基于平台化、模块化的电子信息核心课程智慧实验平台，满足多门相关课程实验。打造线上线下融合的智能数模电实验平台，实现本地和云端共享的实验设备机制。支撑电路分析、低频模拟电路实验、数字逻辑电路等相关实验，并实验内容可定制。</p>
+                <p class="introduction">平台支持 “内容+平台+模块+方向”分类型的学习方式，具备学习过程大数据采集，为以学生为中心的实践评价体系做支撑。此平台基于云、端、边一体化的硬件平台，该平台可24小时在线开放，具备完善的预约管理系统，支持现场、远程开展实验，将强化实验中心硬件建设，改善实验条件，优化实验教学队伍，完善运行与管理机制，促进西北大学信息科学与技术学院工程实践能力的培养。</p>
+            </div>
+        </div>
+        <div class="bannerright">
+            <div class="video">
+                <video src="../video/video.mp4" controls>123</video>
+            </div>
+            <div class="buttonscope">
+                <div class="button">
+                    <a href="http://minibox.elflect.com/"><div class="excercisebutton" title="点击开始实验">我要做实验</div></a>
+                </div class="button">
+            </div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="title">
+            <h1>十进制计数器实验</h1>
+        </div>
+        <div class="label">
+            <ul>
+                <li><a href="./introduce.html">实验简介</a></li>
+                <li><a href="./index.html">实验目标</a></li>
+                <li class="selected">实验原理</li>
+                <li><a href="./method.html">实验方法</a></li>
+                <li><a href="./procedure.html">实验步骤</a></li>
+                <li><a href="./result.html">实验结果</a></li>
+            </ul>
+        </div>
+        <div class="text">
+            <p>74HC161和74LS161都是常用的四位二进制可预置的十六进制同步加法计数器，74HC161是CMOS型，74LS161是TTL型。它可以灵活的运用在各种数字电路，以及单片机系统中实现分频器等很多重要的功能。</p>
+            <p>利用74HC161和74LS161十六进制同步计数器设计十进制计数器，可使用清零法或置数法两种方法。清零法使用外部电路将计数器重置为零，而置数法使用外部电路将计数器预设为特定值。</p>
+            <p>74HC161和74LS161为十六进制同步计数器，74HC160和74LS160为十进制同步计数器，具有计数、预置、保持和清“0”功能。其引脚图如图1所示，各引出端功能简述如下：</p>
+            <p>Q<sub>D</sub>、Q<sub>C</sub>、Q<sub>B</sub>、Q<sub>A</sub>为并行数据输出端，C为进位输出，CP为计数脉冲，上升沿触发。D、C、B、A为并行数据输入。<span style="text-decoration: overline">Cr</span>为异步清“0”端，低电平有效。<span style="text-decoration: overline">LD</span>为低电平同步预置端，并行输入数据。EP、ET为计数允许信号，高电平有效。</p>
+            <img src="../images/theory01.png"  alt="74HC161和74LS161为十六进制同步计数器引脚图" title="74HC161和74LS161为十六进制同步计数器引脚图">
+            <p class="picture">图1 74HC161和74LS161为十六进制同步计数器引脚图</p>
+            <img src="../images/theory02.png" alt="74HC161和74LS161功能表" title="74HC161和74LS161功能表">
+            <p class="picture">图2 74HC161和74LS161功能表</p>
+            <p>CD4511是一片CMOS BCD锁存的7段译码器，用于驱动共阴极LED（数码管）显示器的BCD码七段译码器。具有BCD转换、消隐和锁存控制、七段译码及驱动功能的CMOS电路能提供较大的拉电流，可直接驱动共阴LED数码管。</p>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="content">
+            <p>地址：西安市长安区郭杜教育科技产业园区学府大道1号 邮编：710127</p>
+            <p>Copyright 2017 Northwest University. All Rights Reserved. 西北大学版权所有</p>
+        </div>
+    </div>  
+</body>
+</html>

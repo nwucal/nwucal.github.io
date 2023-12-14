@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>十进制计数器虚拟仿真实验-西北大学虚拟仿真实验平台</title>
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+    <div class="header">
+        <div class="headcontent">
+            <a href="https://ist.nwu.edu.cn/"><img class="headleft" src="../images/headleft.jpg" alt="西北大学信息科学与技术学院" title="西北大学信息科学与技术学院"></a>
+            <a href="https://www.nwu.edu.cn/"><img class="headright" src="../images/headright.png" alt="西北大学" title="西北大学"></a>
+        </div>
+    </div>
+    <div class="banner">
+        <div class="bannerleft">
+            <div class="text">
+                <h1>西北大学虚拟仿真实验平台</h1>
+                <p class="introduction">西北大学虚拟仿真实验平台是基于平台化、模块化的电子信息核心课程智慧实验平台，满足多门相关课程实验。打造线上线下融合的智能数模电实验平台，实现本地和云端共享的实验设备机制。支撑电路分析、低频模拟电路实验、数字逻辑电路等相关实验，并实验内容可定制。</p>
+                <p class="introduction">平台支持 “内容+平台+模块+方向”分类型的学习方式，具备学习过程大数据采集，为以学生为中心的实践评价体系做支撑。此平台基于云、端、边一体化的硬件平台，该平台可24小时在线开放，具备完善的预约管理系统，支持现场、远程开展实验，将强化实验中心硬件建设，改善实验条件，优化实验教学队伍，完善运行与管理机制，促进西北大学信息科学与技术学院工程实践能力的培养。</p>
+            </div>
+        </div>
+        <div class="bannerright">
+            <div class="video">
+                <video src="../video/video.mp4" controls>123</video>
+            </div>
+            <div class="buttonscope">
+                <div class="button">
+                    <a href="http://minibox.elflect.com/"><div class="excercisebutton" title="点击开始实验">我要做实验</div></a>
+                </div class="button">
+            </div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="title">
+            <h1>十进制计数器实验</h1>
+        </div>
+        <div class="label">
+            <ul>
+                <li><a href="./introduce.html">实验简介</a></li>
+                <li><a href="./index.html">实验目标</a></li>
+                <li><a href="./theory.html">实验原理</a></li>
+                <li class="selected">实验方法</li>
+                <li><a href="./procedure.html">实验步骤</a></li>
+                <li><a href="./result.html">实验结果</a></li>
+            </ul>
+        </div>
+        <div class="text">
+            <p>采用西北大学虚拟仿真实验平台，使用信号发生器产生时钟信号（频率1-10Hz的方波），用74HC161和74HC00设计十进制计数器（清零或置数自选），并且用CD4511译码器和数码管显示输出。</p>
+            <p>74HC161计数器：</p>
+            <p>1.清零法：</p>
+            <p>计数器从初始状态 0 开始计数，经过N个状态，直到达到终止状态（N+1）。外部电路产生一个清零信号，并将其反馈回计数器的异步清零输入，将其复位为0，重复此过程。图1为清零法设计的七进制计数器的逻辑图和波形图。</p>
+            <img src="../images/method01.png" alt="清零法设计的七进制计数器的逻辑图和波形图" title="清零法设计的七进制计数器的逻辑图和波形图">
+            <p class="picture">图1 清零法设计的七进制计数器的逻辑图和波形图</p>
+            <p>2.置数法：</p>
+            <p>计数器从预设状态M开始计数，并经历N个状态，直到达到终止状态（M+N）。在终止状态下，外部电路产生一个设置信号，并将其反馈到计数器的同步设置输入，在下一个计数脉冲上将其设置为状态M，重复此过程。图2为置数法设计的七进制计数器的逻辑图和波形图。</p>
+            <img src="../images/method02.png" alt="置数法设计的七进制计数器的逻辑图和波形图" title="置数法设计的七进制计数器的逻辑图和波形图">
+            <p class="picture">图2 置数法设计的七进制计数器的逻辑图和波形图</p>
+            <p>3.级联法：</p>
+            <p>多个计数器以同步或异步级联以扩展计数范围。通过级联计数器，可以设计具有更大计数范围的计数器，例如具有两个级联十进制计数器的百进制计数器。图3为同步级联百进制计数器，图4为异步级联百进制计数器。</p>
+            <img src="../images/method03.png" alt="同步级联百进制计数器" title="同步级联百进制计数器">
+            <p class="picture">图3 同步级联百进制计数器</p>
+            <img src="../images/method04.png" alt="同步级联百进制计数器" title="同步级联百进制计数器">
+            <p class="picture">图4 异步级联百进制计数器</p>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="content">
+            <p>地址：西安市长安区郭杜教育科技产业园区学府大道1号 邮编：710127</p>
+            <p>Copyright 2017 Northwest University. All Rights Reserved. 西北大学版权所有</p>
+        </div>
+    </div>  
+</body>
+</html>
